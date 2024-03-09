@@ -30,6 +30,7 @@ header {
   align-items: center;
   font-size: 1.6rem;
   height: 15%;
+  min-height: 3.125rem;
 }
 header p {
   margin-left: 1.25rem;
