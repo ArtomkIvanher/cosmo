@@ -61,10 +61,11 @@ header{
 
 .container{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container__box{
-    height: 68%;
     width: 90%;
     margin: 0 auto;
 }
@@ -82,7 +83,7 @@ header{
         align-items: center;
 
         img{
-            max-height: 55vh;
+            max-width: 33vw;
         }
     }
 
@@ -116,10 +117,9 @@ header{
 }
 
 .container__infa{
-    height: 15%;
     width: 90%;
-    margin: 0 auto;
-    margin-bottom: 2%;
+    margin: 0 auto 2%;
+    flex: 1 1 auto;
 
     p{
         margin: 0;
@@ -150,7 +150,7 @@ header{
     }
 }
 
-@media (max-width: 57.5rem) {
+@media (max-width: 62.5rem) {
     header{
         height: auto;
         display: flex;
@@ -192,8 +192,8 @@ header{
         .container__text{
             display: flex;
             justify-content: space-around;
-            width: 90%;
             margin: 0 auto;
+            max-width: 100%;
         }
     
         .container__btns{
@@ -211,7 +211,7 @@ header{
         .container__cards{
             display: grid;
             grid-template-columns: 45% 45%;
-            gap: 50% 10%;
+            gap: 50px 10%;
         }
     
         .container__card{
@@ -225,7 +225,7 @@ header{
 @media (max-width: 23.5625rem) {
     .container__infa{
 
-        margin: 0 auto;
+
     
         .container__cards{
             display: grid;
