@@ -161,4 +161,25 @@ header ul li {
     width: 90%;
     margin: 0 auto;
   }
+  .container__infa .container__cards {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 50% 10%;
+  }
+  .container__infa .container__card {
+    padding: 10px;
+  }
+}
+@media (max-width: 23.5625rem) {
+  .container__infa {
+    margin: 0 auto;
+  }
+  .container__infa .container__cards {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 50% 0;
+  }
+  .container__infa .container__card {
+    padding: 10px;
+  }
 }/*# sourceMappingURL=stayle.css.map */
