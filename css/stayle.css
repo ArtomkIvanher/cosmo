@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+.golova {
+  overflow-x: hidden;
+}
+
 .bg__video {
   position: absolute;
   top: 0;
