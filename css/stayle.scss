@@ -34,8 +34,8 @@ header{
     justify-content: space-between;
     align-items: center;
     font-size: 1.6rem;
-    height: 15%;
-    min-height: 3.125rem;
+    height: 80px;
+    
     
     p{
         margin-left: 1.25rem;
@@ -54,8 +54,24 @@ header{
 
 @media (max-width: 50rem) {
     header{
+
+        p{
+            margin-left: 0;
+        }
+
         ul{
             display: none;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 10;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 0, 0);
         }
     }
 }
@@ -64,6 +80,7 @@ header{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .container__box{
@@ -91,23 +108,29 @@ header{
     .container__text{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
 
 
         text-align: center;
         height: 100%;
         max-width: 46.55%;
+
+        p{
+            font-size: 1.6rem;
+        }
     }
 
     .container__btns{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
     }
 
     .container__btn{
         outline: 1px rgb(255, 255, 255) solid;
-        padding: 0.6rem;
+        padding: 0.6rem 0;
         margin: 0.6rem 0;
 
         p{
@@ -120,7 +143,6 @@ header{
 .container__infa{
     width: 90%;
     margin: 0 auto 2%;
-    flex: 1 1 auto;
 
     p{
         margin: 0;
@@ -138,6 +160,7 @@ header{
         display: flex;
         justify-content: space-between;
         height: 100%;
+        font-size: 1.6rem;
     }
 
     .container__card{
@@ -148,10 +171,68 @@ header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0.6rem 0;
     }
 }
 
-@media (max-width: 62.5rem) {
+@media (max-width: 100rem) {
+    .container{
+    }
+    
+    .container__box{
+    }
+    
+    .container__content{
+        flex-direction: column;
+        align-items: center;
+        
+    
+        .container__img{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            img{
+                max-height: auto;
+                max-width: 50vw;
+            }
+        }
+    
+        .container__text{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    
+    
+            text-align: center;
+            height: 100%;
+            max-width: 100%;
+
+            flex: 1 1 auto;
+    
+            p{
+            }
+        }
+    
+        .container__btns{
+            width: 100%;
+            margin-left: 1rem;
+        }
+    
+        .container__btn{
+    
+            p{
+                
+            }
+        }
+    
+    }
+
+}
+
+@media (max-width: 1200px) {
     header{
         height: auto;
         display: flex;
@@ -159,9 +240,9 @@ header{
         justify-content: start;
 
         ul{
-            width: 90%;
+            width: 100%;
             padding: 0;
-            justify-content: space-between;
+            justify-content: space-around;
             
 
             li{
@@ -178,26 +259,26 @@ header{
         flex-direction: column;
         height: auto;
 
-        .container__img{
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    
-            img{
-                max-height: 55vh;
-            }
-        }
+        
 
         .container__text{
             display: flex;
-            justify-content: space-around;
-            margin: 0 auto;
+            flex-direction: column;
+            justify-content: space-between;
+    
+    
+            text-align: center;
+            height: 100%;
             max-width: 100%;
+    
+            p{
+                font-size: 1.6rem;
+            }
         }
     
         .container__btns{
+            margin-bottom: 0.6rem;
+            margin-left: 0;
         }
     
         .container__btn{
@@ -213,29 +294,28 @@ header{
             display: grid;
             grid-template-columns: 45% 45%;
             gap: 50px 10%;
+            height: 90%;
         }
     
         .container__card{
-            padding: 10px;
 
         }
     }
     
 }
 
-@media (max-width: 23.5625rem) {
+@media (max-width: 37.5rem) {
     .container__infa{
 
 
     
         .container__cards{
-            display: grid;
             grid-template-columns: 100%;
-            gap: 50% 0;
+            gap: 10% 0;
+            margin-top: 5%;
         }
     
         .container__card{
-            padding: 10px;
 
         }
     }
