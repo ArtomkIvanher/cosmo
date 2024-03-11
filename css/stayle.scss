@@ -11,7 +11,6 @@ body{
 }
 
 .golova{
-    overflow-x: hidden;
 }
 
 .bg{
@@ -290,6 +289,7 @@ header{
     }
 
     .container__infa{
+        margin: 0 auto 2%;
     
         .container__cards{
             display: grid;

@@ -10,10 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-.golova {
-  overflow-x: hidden;
-}
-
 .bg__video {
   position: absolute;
   top: 0;
@@ -214,6 +210,9 @@ header ul li {
   .container__content .container__btns {
     margin-bottom: 0.6rem;
     margin-left: 0;
+  }
+  .container__infa {
+    margin: 0 auto 2%;
   }
   .container__infa .container__cards {
     display: grid;
