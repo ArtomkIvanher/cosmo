@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/stayle.css">
+    <link rel="stylesheet" href="css/stayle_button.css">
 </head>
     <body>
         <div class="golova">
@@ -44,14 +45,62 @@
                             </div>
 
                             <div class="container__btns">
-                                <div class="container__btn" id="container__btn1">
-                                    <p>01 overgghy</p>
+                                <div class="buttons"  id="container__btn1">
+                                    <button class="blob-btn">
+                                        <div class="container__btn">
+                                            <p>01 overgghy</p>
+                                        </div>
+                                      <span class="blob-btn__inner">
+                                        <span class="blob-btn__blobs">
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                        </span>
+                                      </span>
+                                    </button>
                                 </div>
-                                <div class="container__btn" id="container__btn2">
-                                    <p>02 overgghy</p>
+                                <div class="buttons" id="container__btn2">
+                                    <button class="blob-btn">
+                                        <div class="container__btn">
+                                            <p>01 overgghy</p>
+                                        </div>
+                                      <span class="blob-btn__inner">
+                                        <span class="blob-btn__blobs">
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                        </span>
+                                      </span>
+                                    </button>
                                 </div>
-                                <div class="container__btn" id="container__btn3">
-                                    <p>03 overgghy</p>
+                                <div class="buttons" id="container__btn3">
+                                    <button class="blob-btn">
+                                        <div class="container__btn">
+                                            <p>01 overgghy</p>
+                                        </div>
+                                      <span class="blob-btn__inner">
+                                        <span class="blob-btn__blobs">
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                          <span class="blob-btn__blob"></span>
+                                        </span>
+                                      </span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -96,6 +145,16 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
         </style>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+            </filter>
+        </defs>
+    </svg>
 
         <script src="js/script.js"></script>
     </body>

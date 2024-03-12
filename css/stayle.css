@@ -1,12 +1,14 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
   color: #ffffff;
   font-family: Anta;
-}
-
-.golova {
   overflow-x: hidden;
+  height: 100vh;
 }
 
 .bg__video {
@@ -105,18 +107,10 @@ header ul li {
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
-.container__content .container__btn {
-  outline: 1px rgb(255, 255, 255) solid;
-  padding: 0.6rem 0;
-  margin: 0.6rem 0;
-}
-.container__content .container__btn p {
-  margin: 0;
-}
 
 .container__infa {
   width: 90%;
-  margin: 0 auto 2%;
+  margin: 0 auto;
 }
 .container__infa p {
   margin: 0;
@@ -129,7 +123,7 @@ header ul li {
 .container__infa .container__cards {
   display: flex;
   justify-content: space-between;
-  height: 100%;
+  height: 70%;
   font-size: 1.6rem;
 }
 .container__infa .container__card {
@@ -209,9 +203,6 @@ header ul li {
   .container__content .container__btns {
     margin-bottom: 0.6rem;
     margin-left: 0;
-  }
-  .container__infa {
-    margin: 0 auto 2%;
   }
   .container__infa .container__cards {
     display: grid;
